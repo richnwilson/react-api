@@ -19,5 +19,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build # The folder your build script generates (dist for Vite)
+          folder: dist # The folder your build script generates (dist for Vite)
           branch: gh-pages # The branch the action will deploy to
