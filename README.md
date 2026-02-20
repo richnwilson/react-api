@@ -9,6 +9,7 @@ Using a GitHub action to deploy build to git pages as follows:
   - Add variables one by one
 - Update the `package.json` to include a `homepage` property that will point to your eventual GitPages URL
 - Update the `vite.config.js` to include reference to the base folder in Git, which will be the name of the git repo
+- Update the BrowserRoute in `main.jsx` to use the `basename` property set to the Git repo
 - Create a workflow file in `.github/workflows/deploy.yml`
 - Add the build code in yml, this will include references to the `dist` folder Vite uses and the explicit environment variable 'names' - not values
 - Once pushed to github, will trigger a deploy on all subsequent `push`
